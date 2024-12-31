@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Engineer Compensation Calculator</title>
+    <link rel="stylesheet" href="Increament.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <center><h1>INCREMENT & BONUS</h1></center> -->
+
+      <div class="employee-card">
+        <center><h1>INCREMENT & BONUS</h1></center>
+        <div class="employee-header">
+          <h2>Employee Details :</h2>
+          <span class="role">Senior Software Engineer</span>
+        </div>
+
+        <div class="employee-grid">
+          <div class="details-section">
+            <div class="input-group">
+              <label for="name">Name :</label>
+              <input type="text" id="name" value="TIVARI LATISH MURAHARI SINGH" readonly />
+            </div>
+            <div class="input-group">
+                <label for="text">Employee-Id :</label>
+                <input type="text" id="Emp-Id" value="ATS0128" readonly/>
+            </div>
+            <div class="input-group">
+              <label for="salary">Base Salary ($) :</label>
+              <input type="number" id="salary" value="100000" />
+            </div>
+            <div class="input-group">
+              <label for="performance">Performance Rating (1-5) :</label>
+              <input
+                type="number"
+                id="performance"
+                min="1"
+                max="5"
+                step="0.5"
+                value="4.5"
+              />
+            </div>
+            <div class="input-group">
+              <label for="codeQuality">Code Quality Score (1-5) :</label>
+              <input
+                type="number"
+                id="codeQuality"
+                min="1"
+                max="5"
+                step="0.5"
+                value="4.0"
+              />
+            </div>
+          </div>
+
+          <div class="results-section">
+            <div class="increment-box">
+              <h3>Annual Increment</h3>
+              <div class="result-item">
+                <span>Base Increment :</span>
+                <span id="baseIncrement">8.0%</span>
+              </div>
+              <div class="result-item">
+                <span>Performance Bonus :</span>
+                <span id="performanceBonus">3.0%</span>
+              </div>
+              <div class="result-item">
+                <span>Skills Bonus :</span>
+                <span id="skillsBonus">5.0%</span>
+              </div>
+              <div class="result-item total">
+                <span>Total Increment :</span>
+                <span id="totalIncrement">16.0%</span>
+              </div>
+              <div class="new-salary">
+                <span>New Salary :</span>
+                <span id="newSalary">$116,000</span>
+              </div>
+            </div>
+
+            <div class="bonus-box">
+              <h3>Annual Bonus</h3>
+              <div class="result-item">
+                <span>Base Bonus:</span>
+                <span id="baseBonus">$12,000</span>
+              </div>
+              <div class="result-item">
+                <span>Performance Multiplier:</span>
+                <span id="bonusMultiplier">1.5x</span>
+              </div>
+              <div class="result-item total">
+                <span>Total Bonus:</span>
+                <span id="totalBonus">$18,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h3>Technical Skills</h3>
+          <div class="skills-container">
+            <span class="skill-tag">React (Expert)</span>
+            <span class="skill-tag">TypeScript (Expert)</span>
+            <span class="skill-tag">Node.js (Senior)</span>
+            <span class="skill-tag">AWS (Intermediate)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../Increament/Increament.js"></script>
+  </body>
+</html>
+
